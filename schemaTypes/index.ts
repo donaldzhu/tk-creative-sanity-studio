@@ -1,6 +1,19 @@
 import blockContent from './blockContent'
-import category from './category'
-import post from './post'
-import author from './author'
+import contact from './contact.js'
+import landing from './landing'
+import landingImage from './landingImage'
+import project from './project'
+import projects from './projects'
+import studio from './studio'
+import studioProcess from './studioProcess'
 
-export const schemaTypes = [post, author, category, blockContent]
+export const schemaTypes = [
+  blockContent,
+  landing,
+  landingImage,
+  projects,
+  project,
+  studio,
+  studioProcess,
+  contact
+]
