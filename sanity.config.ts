@@ -13,9 +13,7 @@ export default defineConfig({
   projectId: 'l3z81xl1',
   dataset: 'staging',
 
-  plugins: [structureTool({
-    structure
-  }), visionTool()],
+  plugins: [structureTool({ structure }), visionTool()],
 
   schema: {
     types: schemaTypes,
