@@ -13,7 +13,7 @@ export default defineType({
       title: 'Title',
       type: 'string',
       validation: withMaxChar(),
-      description: 'The name of the project (ex. Rushton House).'
+      description: 'The name of the project (ex. Rushton).'
     }),
     defineField({
       name: 'subtitle',
