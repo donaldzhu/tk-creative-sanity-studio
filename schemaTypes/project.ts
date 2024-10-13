@@ -33,7 +33,7 @@ export default defineType({
       name: 'description',
       title: 'Description',
       type: 'text',
-      validation: withMaxChar(true, 2500)
+      validation: withMaxChar(false, 5000)
     }),
   ],
   preview: {

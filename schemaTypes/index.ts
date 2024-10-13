@@ -1,5 +1,5 @@
 import blockContent from './blockContent'
-import contact from './contact.js'
+import contact from './contact'
 import landing from './landing'
 import landingImage from './landingImage'
 import project from './project'

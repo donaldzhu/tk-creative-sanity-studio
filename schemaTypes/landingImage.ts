@@ -31,12 +31,6 @@ export default defineType({
       validation: rule => rule.required(),
       description: 'Select one of the following image widths.'
     }),
-    defineField({
-      name: 'isPreset',
-      title: 'Use Rebecca’s pre-designed image size.',
-      type: 'boolean',
-      description: 'DEVELOPER USE ONLY. Leave uncheck if you are uploading a new image.'
-    }),
   ],
 
   preview: {

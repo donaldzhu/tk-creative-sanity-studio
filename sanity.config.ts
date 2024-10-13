@@ -11,7 +11,7 @@ export default defineConfig({
   title: 'tk-creatuve',
 
   projectId: 'l3z81xl1',
-  dataset: 'staging',
+  dataset: 'production',
 
   plugins: [structureTool({ structure }), visionTool()],
 
