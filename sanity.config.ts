@@ -8,7 +8,7 @@ import { structure } from './src/deskStructure'
 
 export default defineConfig({
   name: 'default',
-  title: 'tk-creatuve',
+  title: 'tk-creative',
 
   projectId: 'l3z81xl1',
   dataset: 'production',
