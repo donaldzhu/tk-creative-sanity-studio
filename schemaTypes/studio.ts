@@ -27,13 +27,17 @@ export default defineType({
       title: 'Studio Images',
       type: 'array',
       of: [{ type: 'image' }],
-      description: 'The images that pop up over the arrow [↗].'
+      validation: rule => rule.required(),
+      description: 'The images that pop up over the arrow [↗].',
     }),
     defineField({
       name: 'services',
       title: 'Services',
       type: 'blockContent',
-      validation: rule => rule.required().max(2500).warning(`Exceeded character count (${2500} characters).`)
+      validation: rule => [
+        rule.required(),
+        rule.max(2500).warning(`Exceeded character count (2500 characters).`)
+      ]
     }),
     defineField({
       name: 'process',
@@ -42,6 +46,13 @@ export default defineType({
       of: [{ type: 'process' }],
       validation: rule => rule.required(),
       description: 'The list of steps in the process section.'
+    }),
+    defineField({
+      name: 'callToAction',
+      title: 'Call-To-Action',
+      type: 'blockContent',
+      validation: rule => rule.required(),
+      description: 'A call-to-action that leads the user to the survey form.'
     }),
   ],
 })

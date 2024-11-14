@@ -16,6 +16,7 @@ export const createDefaultSlug = () => defineField({
 
 export const withMaxChar = (required = true, charCount = 120): ValidationBuilder<StringRule, string> =>
   rule => {
-    if (required) rule = rule.required()
-    return rule.max(charCount).warning(`Exceeded character count (${charCount} characters).`)
+    const rules = [rule.max(charCount).warning(`Exceeded character count (${charCount} characters).`)]
+    if (required) rules.push(rule.required())
+    return rules
   }

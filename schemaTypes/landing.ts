@@ -27,6 +27,7 @@ export default defineType({
       title: 'Landing Images',
       type: 'array',
       of: [{ type: 'landingImage' }],
+      validation: rule => rule.required(),
     }),
   ],
 })

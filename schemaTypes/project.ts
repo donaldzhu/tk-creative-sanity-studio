@@ -26,7 +26,7 @@ export default defineType({
       name: 'projectImage',
       title: 'Project image',
       type: 'image',
-      validation: rule => rule.required()
+      validation: rule => rule.required(),
     }),
 
     defineField({
